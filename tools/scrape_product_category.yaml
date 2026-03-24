@@ -1,0 +1,26 @@
+identity:
+  name: "scrape_product_category"
+  author: "pangolinfo"
+  label:
+    en_US: "Amazon Category Listings"
+    zh_Hans: "亚马逊类目商品列表"
+description:
+  human:
+    en_US: "Extract extensive macro-market product lists based on a specific Amazon category navigation tree URL."
+    zh_Hans: "从特定的亚马逊分类导航树下，批量提取大范围的宏观商品列表数据用于行业分析。"
+  llm: "Pangolin API integration for web scraping."
+parameters:
+  - name: url
+    type: string
+    required: true
+    label:
+      en_US: "The URL of the website to scrape."
+      zh_Hans: 要抓取的网站URL。
+    human_description:
+      en_US: "The URL of the website to scrape."
+      zh_Hans: "要抓取的网站URL。"
+    llm_description: "Pangolin API integration for web scraping."
+    form: llm
+extra:
+  python:
+    source: tools/scrape_product_category.py

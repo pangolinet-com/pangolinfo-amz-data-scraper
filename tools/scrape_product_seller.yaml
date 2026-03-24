@@ -1,0 +1,26 @@
+identity:
+  name: "scrape_product_seller"
+  author: "pangolinfo"
+  label:
+    en_US: "Amazon Seller Storefront"
+    zh_Hans: "卖家店铺商品抓取"
+description:
+  human:
+    en_US: "Track and extract all active product listings currently sold by a specific competitor's storefront URL."
+    zh_Hans: "追踪并抓取指定竞争对手（卖家主页）当前正在售卖的所有活跃商品列表，反向拆解其定价策略。"
+  llm: "Pangolin API integration for web scraping."
+parameters:
+  - name: url
+    type: string
+    required: true
+    label:
+      en_US: "The URL of the website to scrape."
+      zh_Hans: 要抓取的网站URL。
+    human_description:
+      en_US: "The URL of the website to scrape."
+      zh_Hans: "要抓取的网站URL。"
+    llm_description: "Pangolin API integration for web scraping."
+    form: llm
+extra:
+  python:
+    source: tools/scrape_product_seller.py

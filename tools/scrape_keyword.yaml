@@ -1,0 +1,26 @@
+identity:
+  name: "scrape_keyword"
+  author: "pangolinfo"
+  label:
+    en_US: "Amazon Keyword Search"
+    zh_Hans: "亚马逊关键词搜索"
+description:
+  human:
+    en_US: "Extract structured product lists, organic rankings, prices, and sponsored ads directly from an Amazon search result URL."
+    zh_Hans: "从亚马逊关键词搜索结果页提取完整的商品列表、自然排名、当前价格及广告标识数据。"
+  llm: "Pangolin API integration for web scraping."
+parameters:
+  - name: url
+    type: string
+    required: true
+    label:
+      en_US: "The URL of the website to scrape."
+      zh_Hans: 要抓取的网站URL。
+    human_description:
+      en_US: "The URL of the website to scrape."
+      zh_Hans: "要抓取的网站URL。"
+    llm_description: "Pangolin API integration for web scraping."
+    form: llm
+extra:
+  python:
+    source: tools/scrape_keyword.py

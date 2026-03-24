@@ -1,0 +1,37 @@
+identity:
+  name: "scrape_follow_sellers"
+  author: "pangolinfo"
+  label:
+    en_US: "Amazon Hijacker Tracker"
+    zh_Hans: "亚马逊跟卖监控"
+description:
+  human:
+    en_US: "Monitor the 'Other Sellers' page of an ASIN to track hijackers, competing offers, and protect your BuyBox."
+    zh_Hans: "从特定 ASIN 的“其他卖家”报价页中提取竞争对手及跟卖者信息，用于监控竞品价格并保护您的购物车。"
+  llm: "Pangolin API integration for web scraping."
+parameters:
+  - name: url
+    type: string
+    required: true
+    label:
+      en_US: "The URL of the website to scrape."
+      zh_Hans: 要抓取的网站URL。
+    human_description:
+      en_US: "The URL of the website to scrape."
+      zh_Hans: "要抓取的网站URL。"
+    llm_description: "Pangolin API integration for web scraping."
+    form: llm
+  - name: asin
+    type: string
+    required: true
+    label:
+      en_US: "The ASIN of the product."
+      zh_Hans: 商品 ASIN 码。
+    human_description:
+      en_US: "The ASIN of the product."
+      zh_Hans: "商品 ASIN 码。"
+    llm_description: "Pangolin API integration for web scraping."
+    form: llm
+extra:
+  python:
+    source: tools/scrape_follow_sellers.py

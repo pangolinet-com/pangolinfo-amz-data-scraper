@@ -1,0 +1,26 @@
+identity:
+  name: "scrape_new_releases"
+  author: "pangolinfo"
+  label:
+    en_US: "Amazon New Releases"
+    zh_Hans: "亚马逊新品榜单"
+description:
+  human:
+    en_US: "Track and extract newly launched, trending products from an Amazon New Releases page to capture early market opportunities."
+    zh_Hans: "提取亚马逊新品榜单页中的热门潜力商品，帮助您追踪趋势并抢占早期市场红利。"
+  llm: "Pangolin API integration for web scraping."
+parameters:
+  - name: url
+    type: string
+    required: true
+    label:
+      en_US: "The URL of the website to scrape."
+      zh_Hans: 要抓取的网站URL。
+    human_description:
+      en_US: "The URL of the website to scrape."
+      zh_Hans: "要抓取的网站URL。"
+    llm_description: "Pangolin API integration for web scraping."
+    form: llm
+extra:
+  python:
+    source: tools/scrape_best_sellers.py

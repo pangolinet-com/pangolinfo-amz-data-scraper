@@ -1,0 +1,26 @@
+identity:
+  name: "scrape_best_sellers"
+  author: "pangolinfo"
+  label:
+    en_US: "Amazon Best Sellers Rank"
+    zh_Hans: "亚马逊BSR热卖榜单"
+description:
+  human:
+    en_US: "Scrape the Top 100 trending products from a specific Amazon category BSR page to discover profitable niches."
+    zh_Hans: "从指定的亚马逊类目导航页抓取 Top 100 热销榜单商品，帮助精准挖掘高利润蓝海市场。"
+  llm: "Pangolin API integration for web scraping."
+parameters:
+  - name: url
+    type: string
+    required: true
+    label:
+      en_US: "The URL of the website to scrape."
+      zh_Hans: 要抓取的网站URL。
+    human_description:
+      en_US: "The URL of the website to scrape."
+      zh_Hans: "要抓取的网站URL。"
+    llm_description: "Pangolin API integration for web scraping."
+    form: llm
+extra:
+  python:
+    source: tools/scrape_best_sellers.py

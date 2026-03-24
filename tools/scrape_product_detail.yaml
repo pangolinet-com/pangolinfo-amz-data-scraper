@@ -1,0 +1,26 @@
+identity:
+  name: "scrape_product_detail"
+  author: "pangolinfo"
+  label:
+    en_US: "Amazon ASIN Detail"
+    zh_Hans: "ASIN 商品详情抓取"
+description:
+  human:
+    en_US: "Retrieve deep product specifications including bullet points, BuyBox status, variations, and high-res images for a specific ASIN URL."
+    zh_Hans: "提取特定商品页的深度细节数据，包括五点描述、BuyBox 购物车状态、变体列表和高清图片。"
+  llm: "Pangolin API integration for web scraping."
+parameters:
+  - name: url
+    type: string
+    required: true
+    label:
+      en_US: "The URL of the website to scrape."
+      zh_Hans: 要抓取数据的网站URL。
+    human_description:
+      en_US: "The URL of the website to scrape."
+      zh_Hans: "要抓取数据的网站URL。"
+    llm_description: "Pangolin API integration for web scraping."
+    form: llm
+extra:
+  python:
+    source: tools/scrape_product_detail.py
