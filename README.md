@@ -226,13 +226,13 @@ Please refer to the [Pangolinfo Privacy Policy](https://en.pangolinfo.com/legal/
 ## Support
 
 - **Plugin Support**: Support@pangolinfo.com
-- **API Documentation**: [Pangolinfo Scrape API Documentation](https://docs.pangolinfo.com/en-index)
+- **API Documentation**: [Pangolinfo Scraper API Documentation](https://docs.pangolinfo.com/en-index)
 
 **Official Website**: Visit [Pangolinfo](https://en.pangolinfo.com/)
 
 ## Additional Resources
 
-* [Pangolinfo Scrape API Documentation](https://docs.pangolinfo.com/en-index)
+* [Pangolinfo Scraper API Documentation](https://docs.pangolinfo.com/en-index)
 * [Authentication API Guide](https://docs.pangolinfo.com/en-index#request-url)
 
 *Last updated: March 2026*
